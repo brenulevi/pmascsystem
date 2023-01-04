@@ -17,7 +17,7 @@ router.post('/login', async (req, res) => {
     if (err) return res.json({ error: err });
     if (docs.length == 0)
       return res.json({ error: "No users found" });
-    const token = jwt.sign({}, process.env.TOKEN, {
+    const token = jwt.sign({}, "123banana123", {
       expiresIn: 86400,
     })
 

@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 mongoose.set("strictQuery", true);
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb+srv://admin:admin@pmascdb.2esfv.mongodb.net/patrimony?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
